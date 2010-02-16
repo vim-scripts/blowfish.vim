@@ -1,0 +1,10 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2976
+
+This is a port of blowfish function.
+
+let encrypted = blowfish#encrypt("password", "data", 1)
+let decrypted = blowfish#decrypt("password", encrypted, 1)
+echo encrypted
+=> [113, 35, 42, 246, 6, 245, 188, 236]
+echo decrypted
+=> [100, 97, 116, 97] ("data")
